@@ -1,12 +1,11 @@
 # <p align="center"> Fraud Detection System using Machine Learning </p>
-# <p align="center">![image](https://github.com/AhamedSahil/CYBER-SECURITY-/assets/164605797/2c615903-036b-4e86-b6be-f918ef538681)
+# <p align="center">![img12](https://github.com/Aathimuthu25/CYBER-SECURITY/assets/158067286/1b48dcc7-4d4c-4322-bc20-9f0ad2d2d1cb)
+
 </p>
 
 ## Overview
 
-This project aims to develop a machine learning-based system for detecting fraud in cyber security transactions. The system utilizes 
-various supervised and unsupervised learning techniques to analyze transactional data and identify potentially fraudulent activities.
-By employing advanced algorithms, the system can adapt to evolving fraud patterns and provide accurate predictions in real-time.
+This project is centered on developing a cybersecurity transaction fraud detection system. It employs a range of supervised and unsupervised learning methods to examine transactional data and pinpoint potentially fraudulent activities. The objective is to detect suspicious activities in transactional data by utilizing machine learning techniques and anomaly detection algorithms. Through the analysis of patterns, outliers, and other markers, the system aids in thwarting fraudulent transactions, thereby boosting cybersecurity efforts.
 
 **Tools:-** Excel,Python
 
@@ -14,15 +13,14 @@ By employing advanced algorithms, the system can adapt to evolving fraud pattern
 
 [Python Script (Code)](cyber_security.ipynb)
 
-[Ppt presentation](sql_prjct.pptx)
 
 ### Features 
 
-- Data preprocessing: Clean and prepare the transactional data for analysis.
-  
-- Supervised learning: Train classification models to classify transactions as fraudulent or legitimate.
-  
-- Model evaluation: Assess the performance of the models using relevant metrics such as precision, recall, and F1-score.
+* **Data preprocessing:** Cleansing and transforming raw transactional data into a suitable format for analysis.
+* **Feature engineering:** Extracting relevant features from the data to improve the performance of the fraud detection model.
+* **Machine learning model development:** Building predictive models using algorithms such as logistic regression, random forest, or neural networks.
+* **Anomaly detection:** Employing anomaly detection techniques to identify suspicious transactions that deviate from normal behavior.
+* **Real-time monitoring:** Implementing a system for continuous monitoring of transactions to detect and flag potential fraud in real-time.
 
 
 ## Requirements
@@ -45,13 +43,14 @@ b_sample.shape
 ```
 ```py
 fig = plt.figure(figsize = (8,5))
-b_sample.Attack.value_counts().plot(kind='bar', color= ['blue','green'], alpha = 0.9, rot=0)
+b_sample.Attack.value_counts().plot(kind='bar', color= ['red','green'], alpha = 0.9, rot=0)
 plt.title('Distribution of data based on the Binary attacks of our balanced dataset')
 plt.show()
 ```
 ###### Result: 
 
-![image](https://github.com/AhamedSahil/CYBER-SECURITY-/assets/164605797/acf581f1-9322-4448-ab43-de832070a2ce)
+![img1](https://github.com/Aathimuthu25/CYBER-SECURITY/assets/158067286/a0d9a286-bdcf-4562-83d4-7e993037fc68)
+
 
 ## Model evaluation:
 #### Decision Tree Classifier Model
@@ -69,7 +68,7 @@ train_test = ['Train','test']
 aucc = [dt_aucc,dt_test] 
 plt.figure(figsize=(8, 4))
 # Plot the bar graph
-bars = plt.bar(train_test, aucc, color=['green', 'skyblue'])
+bars = plt.bar(train_test, aucc, color=['brown', 'skyblue'])
 #Add Labels and title 
 plt.xlabel('Decision Tree')
 plt.ylabel('Accuracy')
@@ -80,7 +79,8 @@ plt.show()
 
 ###### Result:
 
-![image](https://github.com/AhamedSahil/CYBER-SECURITY-/assets/164605797/d051c597-d389-417b-b8bd-bb3c28882575)
+![img2](https://github.com/Aathimuthu25/CYBER-SECURITY/assets/158067286/b7ece884-3eb2-4516-b566-a71ff5d86941)
+
 
 #### Building A Decision Tree Classifier plot 
 
@@ -95,7 +95,8 @@ plt.show()
 
 ###### Result:
 
-![image](https://github.com/AhamedSahil/CYBER-SECURITY-/assets/164605797/5d4f1929-7dbd-49e1-812b-66bf9a8c8409)
+![img3](https://github.com/Aathimuthu25/CYBER-SECURITY/assets/158067286/4ba920e8-5110-40f6-9050-6050f7ddb43a)
+
 
 
 
@@ -117,7 +118,7 @@ train_test = ['Train','test']
 aucc = [rf_aucc,dt_test] 
 plt.figure(figsize=(8, 4))
 # Plot the bar graph
-bars = plt.bar(train_test, aucc, color=['green', 'skyblue'])
+bars = plt.bar(train_test, aucc, color=['indigo', 'yellow'])
 #Add Labels and title 
 plt.xlabel('Random Forest')
 plt.ylabel('Accuracy')
@@ -127,7 +128,8 @@ plt.show()
 ```
 
 ###### Result:
-![image](https://github.com/AhamedSahil/CYBER-SECURITY-/assets/164605797/c3969bb8-35d4-4181-bfb1-441b8fcf7ac6)
+![img4](https://github.com/Aathimuthu25/CYBER-SECURITY/assets/158067286/d2549bb3-7f73-483c-987c-6d9f831a9450)
+
 
 
 ### Logistic Regression Model
@@ -149,7 +151,7 @@ train_test = ['Train','Test']
 aucc = [lr_aucc,lr_test] 
 plt.figure(figsize=(8, 4))
 # Plot the bar graph
-bars = plt.bar(train_test, aucc, color=['green', 'skyblue'])
+bars = plt.bar(train_test, aucc, color=['skyblue', 'olive'])
 #Add Labels and title 
 plt.xlabel('Logistic Regrassion')
 plt.ylabel('Accuracy')
@@ -159,7 +161,8 @@ plt.show()
 ```
 
 ###### Result:
-![image](https://github.com/AhamedSahil/CYBER-SECURITY-/assets/164605797/a5d63af0-59a1-4809-8a6a-8d0d0817a91c)
+![img5](https://github.com/Aathimuthu25/CYBER-SECURITY/assets/158067286/9e97cae6-2402-4b7b-a348-baf4f55df40c)
+
 
 
 ### K-Nearest Neighbour Model 
@@ -186,7 +189,7 @@ train_test = ['Train','Test']
 aucc = [knn_aucc,knn_test] 
 plt.figure(figsize=(8, 4))
 # Plot the bar graph
-bars = plt.bar(train_test, aucc, color=['green', 'skyblue'])
+bars = plt.bar(train_test, aucc, color=['peru', 'palegreen'])
 #Add Labels and title 
 plt.xlabel('KNN')
 plt.ylabel('Accuracy')
@@ -197,7 +200,8 @@ plt.show()
 
 ###### Result:
 
-![image](https://github.com/AhamedSahil/CYBER-SECURITY-/assets/164605797/b89dc7b8-5c4f-4fcc-8ce1-c6302dba3ce1)
+![img6](https://github.com/Aathimuthu25/CYBER-SECURITY/assets/158067286/2c682d99-59e5-418e-8201-52ac1c73462d)
+
 
 
 ### Naive Bayes Model
@@ -237,7 +241,8 @@ data_table.shape
 ###### Result:
 ##### Confusion Matrix:
 
-![image](https://github.com/AhamedSahil/CYBER-SECURITY-/assets/164605797/69fbd392-7a2c-461e-be2f-cd1b1d11e46a)
+![img11](https://github.com/Aathimuthu25/CYBER-SECURITY/assets/158067286/6fffec5d-08ac-4a8e-a2f0-4004f00d1fa8)
+
 
 ##### Ploting Confusion Matrix Using Heat Map
 ```py
@@ -248,7 +253,8 @@ sns.heatmap(matrix, annot=True, fmt='d', cmap='YlGnBu')
 ```
 ###### Result:
 
-![image](https://github.com/AhamedSahil/CYBER-SECURITY-/assets/164605797/ed76c0a6-2220-401a-ac77-9bb3451f0347)
+![img7](https://github.com/Aathimuthu25/CYBER-SECURITY/assets/158067286/05e000e0-4e2f-4392-9c3e-3d73daf9156c)
+
 
 ```py
 #creating list for train test accuracy
@@ -256,17 +262,18 @@ train_test = ['Train','Test']
 aucc = [naive_aucc,naive_test] 
 plt.figure(figsize=(8, 4))
 # Plot the bar graph
-bars = plt.bar(train_test, aucc, color=['green', 'skyblue'])
+bars = plt.bar(train_test, aucc, color=['lightcoral', 'gold'])
 #Add Labels and title 
 plt.xlabel('Naive Bayes')
 plt.ylabel('Accuracy')
-plt.title('Accuracy Comparison for Train Test Accuracy')
+plt.title('Accuracy Comparison for Train Test')
 #Show the plot
 plt.show()
 ```
 ###### Result:
 
-![image](https://github.com/AhamedSahil/CYBER-SECURITY-/assets/164605797/37214d65-7a7e-414f-99e8-559f9711e0cf)
+![img8](https://github.com/Aathimuthu25/CYBER-SECURITY/assets/158067286/12ea043a-c3ea-43d9-8c8b-0b9d9417c08f)
+
 
 ### Ensamble Learning bagging Model
 
@@ -290,7 +297,7 @@ train_test = ['Train','Test']
 aucc = [ensm_aucc,ensm_test] 
 plt.figure(figsize=(8, 4))
 # Plot the bar graph
-bars = plt.bar(train_test, aucc, color=['green', 'skyblue'])
+bars = plt.bar(train_test, aucc, color=['cyan', 'silver'])
 #Add Labels and title 
 plt.xlabel('Ensamble Learning Bagging')
 plt.ylabel('Accuracy')
@@ -301,7 +308,8 @@ plt.show()
 ```
 ###### Result:
 
-![image](https://github.com/AhamedSahil/CYBER-SECURITY-/assets/164605797/d6d7f150-c207-41cb-828f-7420452ff6bd)
+![img9](https://github.com/Aathimuthu25/CYBER-SECURITY/assets/158067286/97ccbbae-0eec-4c9f-9b2d-b140a3915762)
+
 
 ##### Compariosion of All The Accuracy of Each Model
 
@@ -324,7 +332,8 @@ plt.show()
 
 ###### Result:
 
-![image](https://github.com/AhamedSahil/CYBER-SECURITY-/assets/164605797/5fa90674-c1c9-4740-95c2-386dc0657bd9)
+![img10](https://github.com/Aathimuthu25/CYBER-SECURITY/assets/158067286/2fbdba19-032f-4604-91fa-75ca5dd7c199)
+
 
 ### Conclusion
 
