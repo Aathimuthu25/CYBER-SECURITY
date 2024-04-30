@@ -13,7 +13,7 @@ This project is centered on developing a cybersecurity transaction fraud detecti
 
 [Python Script (Code)](cyber_security.ipynb)
 
-[Ppt presentation]
+[Ppt](https://github.com/Aathimuthu25/CYBER-SECURITY/blob/main/Cyber%20Security%20Business%20Plan%20by%20Slidesgo.pptx)
 
 
 ### Features 
