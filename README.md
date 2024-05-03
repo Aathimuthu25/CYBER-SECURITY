@@ -343,7 +343,7 @@ plt.show()
 
 - In our dataset we are having 41 variables then we find out our 'Y' variable who is having good relation with most of the variables. Then we have decided that whichever variables having more than 30% correlation with the 'Y' variable 'Attack' that will be our final data set for machine learning. After that the final dataset is having now 18 varibles including 'Y' varible.
 
-- Fraud Detection System represents a critical tool in the fight against cybercrime, providing organizations with the means to protect their assets and customers from fraudulent activities. we have applied so many machine learning models to get the perfect result without ofverfitting, and finally we get the final model using Logistic regression model there we got 99% accuracy and there is no overfitting.
+- Fraud Detection System represents a critical tool in the fight against cybercrime, providing organizations with the means to protect their assets and customers from fraudulent activities. we have applied so many machine learning models to get the perfect result without overfitting, and finally we get the final model using Logistic regression model there we got 99% accuracy and there is no overfitting.
 
 
 
